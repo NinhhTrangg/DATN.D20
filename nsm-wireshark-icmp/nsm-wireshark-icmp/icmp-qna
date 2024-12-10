@@ -1,0 +1,16 @@
+1. ping to any address and capture with Wireshark (example: ping google.com)
+
+2. Does ICMP packet have source and destination port?
+Answer: (Yes/No)
+
+3. Export a ping request packet to icmp.txt (expand all) and answer
+Packet number:
+Source: 
+Destination:
+Type number:
+Code number:
+Checksum:
+Sequence Number(BE):
+Identifier(BE):
+
+run: " sed -i 's/^[[:space:]]*//' icmp.txt " before checkwork

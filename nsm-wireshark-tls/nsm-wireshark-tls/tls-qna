@@ -1,0 +1,27 @@
+*Only analyze packets from or to 128.119.240.84, only expand needed info when export
+
+1. Examine the first TLS client hello packet and answer
+Client Hello: <packet number> - <TLS version> - <First two hexadecimal of random bytes>
+
+2. How many cipher suites are supported by client? Which one has been chosen by server? Export related packets to Cipher.txt
+Cipher: <suite number> - <chosen cipher suite in hexadecimal>
+
+3.1. What is the locality name of the certification authority that issued the certificate for id-at-commonName=www.cs.umass.edu? Export related packets to Cert.txt
+Cert: *** *****
+
+3.2. What digital signature algorithm is used by the CA to sign this certificate?
+Sig: ****** With *** Encryption
+
+3.3. What are the first four hexadecimal digits of the modulus of the public key being used by www.cs.umass.edu?
+Modulus: 0x****
+
+4. What are the first four hexadecimal digits of public key sent from client to server. Export related packets to Key.txt
+Public key: 0x****
+
+5. Does the client provide its own CA-signed public key certificate back to the server? If so export related packets to ClientCert.txt
+Client certificate: yes/no
+
+6. Export packet has the TLS message that shuts down the TLS connection to Disconnect.txt. Because TLS messages are encrypted in our Wireshark traces so we’ll have to make an educated guess
+
+
+
